@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yIh-BU-eyC">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast View Controller-->
+        <scene sceneID="giT-9u-x0s">
+            <objects>
+                <viewController id="yIh-BU-eyC" customClass="ForecastViewController" customModule="CloudCast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Znc-Oo-AMY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vancouver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-m2-koj">
+                                <rect key="frame" x="118.66666666666667" y="79" width="155.66666666666663" height="32"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="28"/>
+                                <color key="textColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place-marker" translatesAutoresizingMaskIntoConstraints="NO" id="c51-ZH-Wen">
+                                <rect key="frame" x="86.666666666666671" y="79" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fx6-eu-x4U"/>
+                                    <constraint firstAttribute="width" constant="30" id="rlY-qY-IDh"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-bX-tm7">
+                                <rect key="frame" x="109" y="186.00000000000003" width="175" height="352.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct 2nd, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHK-Db-4nb">
+                                        <rect key="frame" x="25" y="0.0" width="125" height="23.333333333333332"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="19"/>
+                                        <color key="textColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J2G-ZY-EMJ">
+                                        <rect key="frame" x="0.0" y="59" width="175" height="170"/>
+                                        <color key="tintColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="099-od-1ah"/>
+                                            <constraint firstAttribute="height" constant="175" id="jXI-RN-PhQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWB-Y3-jHH">
+                                        <rect key="frame" x="35.333333333333336" y="264.33333333333331" width="104.33333333333331" height="33"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="29"/>
+                                        <color key="textColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3Y-Uh-8wx">
+                                        <rect key="frame" x="67.333333333333343" y="330.33333333333337" width="40.333333333333343" height="22.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="18"/>
+                                        <color key="textColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wt-xj-kBO">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀">
+                                    <color key="baseForegroundColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="yIh-BU-eyC" eventType="touchUpInside" id="0ZA-XO-1NF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouc-oQ-XFO">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶">
+                                    <color key="baseForegroundColor" red="0.24118757590000001" green="0.4357657258" blue="0.13334098799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didForwardButton:" destination="yIh-BU-eyC" eventType="touchUpInside" id="W5h-hg-utn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XmB-ig-bZv"/>
+                        <color key="backgroundColor" red="0.97230023145675659" green="0.96673208475112915" blue="0.89854782819747925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dmP-bX-tm7" firstAttribute="centerX" secondItem="Znc-Oo-AMY" secondAttribute="centerX" id="5hI-vP-J6r"/>
+                            <constraint firstItem="5wt-xj-kBO" firstAttribute="leading" secondItem="XmB-ig-bZv" secondAttribute="leading" constant="16" id="BXJ-yN-h2p"/>
+                            <constraint firstItem="Ouc-oQ-XFO" firstAttribute="centerY" secondItem="Znc-Oo-AMY" secondAttribute="centerY" constant="-75" id="R79-cG-sN4"/>
+                            <constraint firstItem="Xpd-m2-koj" firstAttribute="leading" secondItem="c51-ZH-Wen" secondAttribute="trailing" constant="2" id="Yd8-g2-Xvc"/>
+                            <constraint firstItem="dmP-bX-tm7" firstAttribute="top" secondItem="Xpd-m2-koj" secondAttribute="bottom" constant="75" id="ZdY-1i-VtR"/>
+                            <constraint firstItem="c51-ZH-Wen" firstAttribute="top" secondItem="XmB-ig-bZv" secondAttribute="top" constant="20" id="fRC-Pd-M3d"/>
+                            <constraint firstItem="5wt-xj-kBO" firstAttribute="centerY" secondItem="Znc-Oo-AMY" secondAttribute="centerY" constant="-75" id="fgn-23-mih"/>
+                            <constraint firstItem="dmP-bX-tm7" firstAttribute="top" secondItem="Xpd-m2-koj" secondAttribute="bottom" constant="75" id="gQI-AJ-Nnf"/>
+                            <constraint firstItem="XmB-ig-bZv" firstAttribute="trailing" secondItem="Ouc-oQ-XFO" secondAttribute="trailing" constant="16" id="keb-dU-SMk"/>
+                            <constraint firstItem="Xpd-m2-koj" firstAttribute="top" secondItem="XmB-ig-bZv" secondAttribute="top" constant="20" id="oYd-m8-j1L"/>
+                            <constraint firstItem="Xpd-m2-koj" firstAttribute="centerX" secondItem="Znc-Oo-AMY" secondAttribute="centerX" id="sHX-VV-6Fs"/>
+                            <constraint firstItem="XmB-ig-bZv" firstAttribute="trailing" secondItem="Ouc-oQ-XFO" secondAttribute="trailing" constant="16" id="tmA-6w-3GZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="HHK-Db-4nb" id="QBX-eT-fEL"/>
+                        <outlet property="descriptionLabel" destination="lWB-Y3-jHH" id="GCj-ri-jQQ"/>
+                        <outlet property="forecastImageView" destination="J2G-ZY-EMJ" id="NKY-x0-RJo"/>
+                        <outlet property="locationLabel" destination="Xpd-m2-koj" id="Qzq-KX-8HK"/>
+                        <outlet property="temperatureLabel" destination="O3Y-Uh-8wx" id="1Gl-Pl-4lE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdP-1g-eOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.1145038167939" y="-123.23943661971832"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" catalog="system" width="128" height="87"/>
+        <image name="place-marker" width="64" height="64"/>
+    </resources>
+</document>
